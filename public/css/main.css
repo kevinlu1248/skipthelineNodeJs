@@ -1,0 +1,34 @@
+html, body {
+    /* overflow: hidden; */
+    /* margin: 2% 5% 2% 5%; */
+    height: 100%;
+    margin: 0;
+}
+
+#main-container {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+#nav-header {
+    flex: 0 1 auto;
+}
+
+.text-editing-container {
+    flex: 1 1 auto;
+    /* width: 100%;
+    height: 100%; */
+}
+
+/* body.cke_editable {
+    font-family: "Times New Romans", Times, serif;
+} */
+
+/* .text-editing-container > div ,.text-editing-container > div > .ck-editor__main ,.text-editing-container > div > .ck-editor__main > div {
+    height: 100% !important;
+}
+
+.ck.ck-editor {
+    overflow-y: hidden;
+} */
