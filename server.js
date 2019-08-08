@@ -6,7 +6,8 @@ const express = require('express');
 // const bootstrap = require('bootstrap');
 const app = express();
 
-app.use(express.static('public'));
+app.use(express.static(__dirname + 'public'));
+app.use(express.static(__dirname + '/node_modules/bootstrap/dist'));
 app.set('view engine', 'ejs');
 
 // var con = mysql.createConnection({
