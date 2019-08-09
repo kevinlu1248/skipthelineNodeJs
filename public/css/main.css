@@ -6,7 +6,7 @@ html, body {
 }
 
 .top-nav {
-    background: #50434388 !important;
+    background: #55434366 !important;
     max-width: none;
 }
 
@@ -33,4 +33,19 @@ html, body {
 .bg-dark-gradient {
     background-image: radial-gradient(circle, #333b, #222b);
     /* background-image: radial-gradient(circle, #333, #222); */
+}
+
+.signup-form-container {
+    padding-top: 40% !important;
+}
+
+.signup-form {
+    background-color: #8883;
+    padding: 40px 20px 40px 20px;
+    border-radius: 10px;
+}
+
+.submit-button-container {
+    width: 100%;
+    text-align: center;
 }
