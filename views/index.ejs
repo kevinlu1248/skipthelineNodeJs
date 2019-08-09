@@ -1,43 +1,29 @@
-<!-- Template for a text editor for taking notes -->
-
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-
-    <head>
-        <meta charset="utf-8">
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Skip the Line</title>
-
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="/css/bootstrap.min.css">
-        <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
-        <!-- Jquery -->
-        <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
-        <!-- Custom CSS -->
-        <!-- <link rel="stylesheet" href="css/main.css"> -->
-    </head>
-
-    <body>
-
-        <div id="main-container" class="d-flex">
-            <div id="nav-header" class="d-flex justify-content-between px-lg-4 py-lg-2">
-                <div class="notes-title text-muted">
-                    <h1 contenteditable="true" id="notes-title-input">
-                        <em>Untitled Notes</em>
-                    </h1>
-                </div>
-                <div>
-                    <h1 class="text-muted">
-                        Noter Logo
-                    </h1>
-                </div>
+<% include ../public/includes/header.ejs %>
+<div class="registration-container h-100 p-3">
+    <div class="main-logo text-center w-100">
+        <h1 class="text-light display-4 text-center">
+            Skip the Line
+        </h1>
+    </div>
+    <br />
+    <form id="entry-signup" class="form-inline">
+        <div class="input-group mb-5">
+            <input id="studentID" type="number" max="99999999" min="100000" class="form-control" placeholder="Student ID" aria-label="studentID" aria-describedby="signup-button" name="studentID">
+            <div class="input-group-append">
+                <button class="btn btn-secondary" type="button" id="signup-button">Sign Up!</button>
             </div>
         </div>
+    </form>
 
-        <!-- Custom JS -->
-        <script src="js/main.js"></script>
-    </body>
-
-</html>
+</div>
+<script src="/bubbly-bg.js"></script>
+<script src="js/homepage.js"></script>
+<script>
+    bubbly({
+        colorStart: "#333",
+        colorStop: "#222",
+        shadowColor: "#ddd",
+        bubbles: 10
+    });
+</script>
+<% include ../public/includes/footer.ejs %>

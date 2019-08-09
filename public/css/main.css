@@ -1,34 +1,36 @@
 html, body {
-    /* overflow: hidden; */
+    overflow-x: hidden;
+    max-width: 100%;
+    /* background-color: black; */
     /* margin: 2% 5% 2% 5%; */
-    height: 100%;
-    margin: 0;
 }
 
-#main-container {
-    display: flex;
-    flex-flow: column;
-    height: 100%;
+.top-nav {
+    background: #50434388 !important;
+    max-width: none;
 }
 
-#nav-header {
-    flex: 0 1 auto;
+.top-nav a {
+    font-size: 1rem;
 }
 
-.text-editing-container {
-    flex: 1 1 auto;
-    /* width: 100%;
-    height: 100%; */
+#main-title {
+    font-size: 1.75rem;
 }
 
-/* body.cke_editable {
-    font-family: "Times New Romans", Times, serif;
-} */
-
-/* .text-editing-container > div ,.text-editing-container > div > .ck-editor__main ,.text-editing-container > div > .ck-editor__main > div {
-    height: 100% !important;
+#content {
+    height: 100vh;
 }
 
-.ck.ck-editor {
-    overflow-y: hidden;
-} */
+#entry-signup {
+    display: none;
+}
+
+.registration-container {
+    padding-top: 80% !important;
+}
+
+.bg-dark-gradient {
+    background-image: radial-gradient(circle, #333b, #222b);
+    /* background-image: radial-gradient(circle, #333, #222); */
+}

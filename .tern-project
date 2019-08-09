@@ -1,0 +1,26 @@
+{
+  "libs": [
+    "browser",
+    "jquery"
+  ],
+  "plugins": {
+    "complete_strings": {
+      "maxLength": 15
+    },
+    "doc_comment": {
+      "fullDocs": true,
+      "strong": false
+    },
+    "node": {
+      "dontLoad": "",
+      "load": "",
+      "modules": ""
+    }
+  },
+  "loadEagerly": [
+    "node_modules/bootstrap/dist/css/bootstrap.min.css",
+    "public/*",
+    "views/*.ejs"
+  ],
+  "dontLoad": []
+}

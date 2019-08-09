@@ -6,8 +6,11 @@ const express = require('express');
 // const bootstrap = require('bootstrap');
 const app = express();
 
-app.use(express.static(__dirname + 'public'));
+app.use(express.static('public'));
 app.use(express.static(__dirname + '/node_modules/bootstrap/dist'));
+app.use(express.static(__dirname + '/node_modules/jquery/dist'));
+app.use(express.static(__dirname + '/node_modules/bubbly-bg/dist'));
+app.use(express.static(__dirname + '/node_modules/animate.css/'));
 app.set('view engine', 'ejs');
 
 // var con = mysql.createConnection({
@@ -21,8 +24,12 @@ app.set('view engine', 'ejs');
 // });
 
 app.get('/', (req, res) => {
+    res.render('index', {path: req.originalUrl});
+})
+
+app.get('/signup', (req, res) => {
     // res.send('Hello World');
-    res.render('index');
+    res.render('signup', {path: req.originalUrl});
 })
 
 // PORT
