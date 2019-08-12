@@ -4,7 +4,16 @@ $(document).ready(() => {
         $("nav, #entry-signup").fadeIn('slow');
     }, 1500);
 
+    $('#studentID').keydown(function(e) {
+        if (e.keyCode == 13) {
+            e.preventDefault();
+            // console.log("signup?studentID" + $("#studentID").val());
+            window.location = "signup?studentID=" + $(this).val();
+        }
+    });
+
     $('#signup-button').click(function() {
-        window.location = "signup#" + $("#studentID").val();
+        // console.log("signup?studentID" + $("#studentID").val());
+        window.location = "signup?studentID=" + $("#studentID").val();
     });
 });
