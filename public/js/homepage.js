@@ -2,7 +2,7 @@ $(document).ready(() => {
     // $('#entry-signup, nav').hide();
     setTimeout(function() {
         $("nav, #entry-signup").fadeIn('slow');
-    }, 1500);
+    }, 1000);
 
     $('#studentID').keydown(function(e) {
         if (e.keyCode == 13) {
